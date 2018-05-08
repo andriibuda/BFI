@@ -8,12 +8,14 @@ app.set('view engine', 'pug');
 
 
 /**
- * /GET
+ * Controllers (route handlers)
+ */
+const indexController = require("./controllers/index");
+
+/**
  * Index route
  */
-app.get('/', function (req, res) {
-    res.render('index', { title: 'Hey', message: 'Hello there!' })
-});
+app.get('/', indexController.getIndex);
 
 
 /**
