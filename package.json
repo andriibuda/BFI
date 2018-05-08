@@ -1,0 +1,30 @@
+{
+  "name": "bfi",
+  "version": "1.0.0",
+  "description": "Browser Fingerprint Information",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriibuda/BFI.git"
+  },
+  "keywords": [
+    "Fingerprint",
+    "Javascript",
+    "Browser"
+  ],
+  "author": "Andrii Buda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andriibuda/BFI/issues"
+  },
+  "homepage": "https://github.com/andriibuda/BFI#readme"
+}
