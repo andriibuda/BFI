@@ -19,6 +19,12 @@ app.get('/', indexController.getIndex);
 
 
 /**
+ * Serving static files
+ */
+app.use('/static', express.static('public'));
+
+
+/**
  * Running server on 3000 port
  */
 app.listen(3000, () => console.log('Example app listening on port 3000!'));

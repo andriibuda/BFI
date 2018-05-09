@@ -13,9 +13,16 @@ html
             section.section
                 h3.subtitle.is-4 HTTP Headers
                 each value, key in httpHeaders
-                    div.columns
-                        div.column.is-3.has-text-weight-bold.is-capitalized= key
-                        div.column.is-9= value
+                    //div.columns
+                    //    div.column.is-3.has-text-weight-bold.is-capitalized= key
+                    //    div.column.is-9= value
+                    div
+                        span.has-text-weight-bold.is-capitalized #{key}: &nbsp;&nbsp;&nbsp;
+                        span= value
 
             // Information about Javascript windows.navigation object
+            section.section
+                h3.subtitle.is-4 Content of window.navigator object
+                div#window_navigator
 
+        include includes/js
